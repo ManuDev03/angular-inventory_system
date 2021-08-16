@@ -4,26 +4,26 @@
     <label for="">StoreId</label>
   </div>
   <div>
-    <input type="text" class="form-control" [(ngModel)]="inventorymodel.storeId">
+    <input type="text" class="form-control" [(ngModel)]="inventorymodel.storeId" name="storeId">
   </div>
   <div class="form-group">
   <label for="">Inventory Name</label>
   </div>
   <div>
-    <input type="text" class="form-control" [(ngModel)]="inventorymodel.name">
+    <input type="text" class="form-control" [(ngModel)]="inventorymodel.name" name="name">
   </div>
   <div class="form-group">
   <label for="">GST no</label>
 </div>
 <div>
-  <input type="text" class="form-control" [(ngModel)]="inventorymodel.gstno">
+  <input type="text" class="form-control" [(ngModel)]="inventorymodel.gstno" name="gstno">
 </div>
 
 <div class="form-group">
   <label for="">Address</label>
 </div>
 <div>
-  <input type="text" class="form-control" [(ngModel)]="inventorymodel.address">
+  <input type="text" class="form-control" [(ngModel)]="inventorymodel.address" name="address">
 </div>
 <button (click)="save()">Save</button>
 
