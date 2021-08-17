@@ -26,10 +26,20 @@ export class AppComponent implements OnInit {
     })
   }
   save(){
+    if(this.inventorymodel.id==""){
     console.log(this.inventorymodel)
     this.obj.saveInventory(this.inventorymodel)
-  }
-  readData(){
+    }
+    else{
+      this.obj.updateInventory(this.inventorymodel)
 
+    }
   }
+
+  readData(){}
+
+ editData(invent:Inventory){
+   this.inventorymodel = invent
+  //  this.obj.updateInventory(this.inventorymodel)
+ }
 }

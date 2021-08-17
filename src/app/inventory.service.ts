@@ -16,6 +16,9 @@ export class InventoryService {
   getInventory(){
    return  this.firestore.collection("inventorystore").snapshotChanges()
   }
+  updateInventory(obj:Inventory){
+    this.firestore.doc("inventorystore/"+ obj.id).update({...obj})
+  }
 
 
 }
