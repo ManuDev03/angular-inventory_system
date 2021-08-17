@@ -9,7 +9,10 @@ export class InventoryService {
 
   constructor(private firestore:AngularFirestore) { }
   saveInventory(invent:Inventory){
-    this.firestore.collection("inventorystore").add({...invent})
+    this.firestore.collection("inventorystore").add({name:invent.name,
+      storeid:invent.storeId,
+      gstno:invent.gstno,
+      address:invent.address})
 
   }
 
