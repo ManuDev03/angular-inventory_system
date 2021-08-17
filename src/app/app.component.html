@@ -38,8 +38,8 @@
       <th>gstno</th>
       <th>name</th>
       <th>address</th>
-      <th>Delete</th>
       <th>Edit</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -50,6 +50,8 @@
       <td>{{data.name}}</td>
       <td>{{data.address}}</td>
       <td><button class="btn btn-warning" (click)="editData(data)">edit</button></td>
+      <td><button class="btn btn-danger" (click)="deleteData(data)">delete</button></td>
+
     </tr>
   </tbody>
 </table>

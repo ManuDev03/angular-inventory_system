@@ -19,6 +19,8 @@ export class InventoryService {
   updateInventory(obj:Inventory){
     this.firestore.doc("inventorystore/"+ obj.id).update({...obj})
   }
-
+deleteInventory(invent:Inventory){
+  this.firestore.doc("inventorystore/"+ invent.id).delete()
+}
 
 }

@@ -42,4 +42,11 @@ export class AppComponent implements OnInit {
    this.inventorymodel = invent
   //  this.obj.updateInventory(this.inventorymodel)
  }
+
+ deleteData(invent:Inventory){
+   console.log('delete')
+   console.log(invent)
+   this.obj.deleteInventory(invent)
+ }
+
 }
