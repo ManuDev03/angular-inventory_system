@@ -28,3 +28,27 @@
 <button (click)="save()">Save</button>
 
 </form>
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>storeid</th>
+      <th>gstno</th>
+      <th>name</th>
+      <th>address</th>
+      <th>Delete</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let data of inventory_data'>
+      <td>{{data.id}}</td>
+      <td>{{data.storeId}}</td>
+      <td>{{data.gstno}}</td>
+      <td>{{data.name}}</td>
+      <td>{{data.address}}</td>
+    </tr>
+  </tbody>
+</table>

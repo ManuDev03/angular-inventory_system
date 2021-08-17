@@ -3,4 +3,5 @@ export class Inventory {
     name:string=""
     gstno:string=""
     address:string=""
+    id:string=""
 }

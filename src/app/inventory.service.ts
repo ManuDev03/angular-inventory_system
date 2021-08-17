@@ -13,5 +13,9 @@ export class InventoryService {
 
   }
 
+  getInventory(){
+   return  this.firestore.collection("inventorystore").snapshotChanges()
+  }
+
 
 }
