@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~12.1.2",
     "@angular/platform-browser-dynamic": "~12.1.2",
     "@angular/router": "~12.1.2",
+    "angularfire": "^2.3.0",
     "bootstrap": "^5.1.0",
     "firebase": "^8.9.1",
     "rxjs": "~6.6.0",
